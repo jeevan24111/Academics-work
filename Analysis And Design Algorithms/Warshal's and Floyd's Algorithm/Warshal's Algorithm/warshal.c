@@ -19,7 +19,6 @@ int main(){
     int i,j,n,c[max][max];
     printf("enter the number of vertices\n");
     scanf("%d",&n);
-    printf("\n Enter Graph Data\n");
     for(i=1;i<=n;i++){
         for(j=1;j<=n;j++){
             scanf("%d",&c[i][j]);
@@ -31,7 +30,8 @@ int main(){
       for(i=1;i<=n;i++){
         for(j=1;j<=n;j++){
             printf("%d ",c[i][j]);
-        }
+        }  printf("\n Enter Graph Data\n");
+  
         printf(" \n");
     }
 }
