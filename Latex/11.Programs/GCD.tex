@@ -1,0 +1,18 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\begin{document}
+\begin{algorithm}
+\caption{GCD OF TWO NUMBERS}
+\begin{algorithmic}[1]
+\Procedure{GCD}{a,b}
+\While {$b \neq	0$}
+	\State $temp \gets b$
+	\State $a \gets a \bmod b$
+	\State $b \gets temp$
+\EndWhile
+\State \Return $a$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+\end{document}
