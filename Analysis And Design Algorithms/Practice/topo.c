@@ -1,49 +1,49 @@
-#include<stdio.h>
-int temp[10],k=0;
+// #include<stdio.h>
+// int temp[10],k=0;
 
-void sort(int a[10][10],int id[10],int n){
-    int i,j;
-    for(i=1;i<=n;i++){
-        if(id[i]==0){
-            id[i]=-1;
-            temp[++k]=i;
-        for(j=1;j<=n;j++){
-            if(a[i][j]==1 && id[j]!=-1){
-                id[j]--;
-            }
-        }
-        i=0;
-        }
-    }
-}
+// void sort(int a[10][10],int id[10],int n){
+//     int i,j;
+//     for(i=1;i<=n;i++){
+//         if(id[i]==0){
+//             id[i]=-1;
+//             temp[++k]=i;
+//         for(j=1;j<=n;j++){
+//             if(a[i][j]==1 && id[j]!=-1){
+//                 id[j]--;
+//             }
+//         }
+//         i=0;
+//         }
+//     }
+// }
 
-int main(){
-    int n,i,j,a[10][10],id[10];
-    k=0;
-    printf("\nEnter number of vertcies\n");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++){
-        id[i]=0;
-    }
-    printf("\n enter graph data\n");
-    for(i=1;i<=n;i++){
-        for(j=1;j<=n;j++){
-            scanf("%d",&a[i][j]);
-            if(a[i][j]==1){
-                id[j]++;
-            }
-        }
-    }
-    sort(a,id,n);
-    if(k!=n){
-        printf("topological sort is not enough\n");
-    }else{
-         printf("Topological sort is: ");
-        for(i=1;i<=k;i++){
-            printf("%d",temp[i]);
-        }
-    }
-}
+// int main(){
+//     int n,i,j,a[10][10],id[10];
+//     k=0;
+//     printf("\nEnter number of vertcies\n");
+//     scanf("%d",&n);
+//     for(i=1;i<=n;i++){
+//         id[i]=0;
+//     }
+//     printf("\n enter graph data\n");
+//     for(i=1;i<=n;i++){
+//         for(j=1;j<=n;j++){
+//             scanf("%d",&a[i][j]);
+//             if(a[i][j]==1){
+//                 id[j]++;
+//             }
+//         }
+//     }
+//     sort(a,id,n);
+//     if(k!=n){
+//         printf("topological sort is not enough\n");
+//     }else{
+//          printf("Topological sort is: ");
+//         for(i=1;i<=k;i++){
+//             printf("%d",temp[i]);
+//         }
+//     }
+// }
 // // }
 // #include<stdio.h>
 // int temp[10], k = 0;
@@ -98,3 +98,52 @@ int main(){
 //     }
 //     return 0;
 // }
+#include<stdio.h>
+
+int temp[10],k=0;
+ void sort1(int a[10][10],int id[10],int n ){
+    int i,j;
+    for(i=1;i<=n;i++){
+        if(id[i]==0){
+            id[i]=-1;
+            temp[++k]=i;
+
+            for(j=1;j<=n;j++){
+                if(a[i][j]==1 && id[j]!=-1){
+                    id[j]--;     
+            }
+        }
+         i=0; 
+        }
+
+    }
+ }
+
+int main(){
+
+    int i,j,n,id[10],a[10][10];
+    printf("enter number of vertices\n");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        id[i]=0;
+    }
+    printf("enter graph data\n");
+    for(i=1;i<=n;i++){
+        for(j=1;j<=n;j++){
+        scanf("%d",&a[i][j]);
+        if(a[i][j]==1){
+            id[j]++;
+        }
+    }
+    }
+    sort1(a,id,n);
+    if(k!=n){
+        printf("topo not possible\n");
+    }else{
+        printf("topological order is\n");
+        for(i=1;i<=k;i++){
+            printf("%d ",temp[i]);
+        }
+        printf("\n");
+    }
+}

@@ -85,3 +85,4 @@ int main(){
      fraction1(p,w,n,m);
      return 0;
 }
+

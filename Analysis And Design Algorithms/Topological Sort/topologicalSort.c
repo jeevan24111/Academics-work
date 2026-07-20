@@ -41,7 +41,7 @@ int main(){
         printf("Topological Ordering not possible!!\n");
     }else{
         printf("Topological ordering is:\n");
-        for(i=0;i<=k;i++){
+        for(i=1;i<=k;i++){
             printf("%d",temp[i]);
         }
     }

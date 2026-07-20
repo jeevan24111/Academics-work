@@ -139,3 +139,72 @@ int main(){
     
 //     return 0;
 // }
+
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<conio.h>
+
+// int place(int c[],int r){
+//     int i;
+//     for(i=0;i<r;i++){
+//         if(c[i]==c[r] || abs(c[i]-c[r])==abs(i-r)){
+//             return 0;
+//         }
+//     }
+//     return 1;
+// }
+
+// void display(int c[],int n){
+//     int i,j;
+//     char cb[20][20];
+
+//     for(i=0;i<n;i++){
+//         for(j=0;j<n;j++){
+//             cb[i][j]='-';
+//         }
+//     }
+
+//     for(i=0;i<n;i++){
+//         cb[i][c[i]]='Q';
+//     }
+
+//      for(i=0;i<n;i++){
+//         for(j=0;j<n;j++){
+//             printf("%c ",cb[i][j]);
+//         }
+//         printf("\n");
+//     }
+//         printf("\n");
+// }
+// void nQueen(int c[],int r,int n){
+//     int i;
+//     if(r==n){
+//         display(c,n);
+//         return ;
+//     }
+
+//     for(i=0;i<n;i++){
+//         c[r]=i;
+//         if(place(c,r)){
+//             nQueen(c,r+1,n);
+//         }
+//     }
+// }
+
+// int main(){
+//     int n,c[20];
+//     printf("enter number of queens\n");
+//     scanf("%d",&n);
+//     if(n<=0){
+//         printf("Invalid queen enterd\n");
+//         return 1;
+//     }
+//     if(n==2 || n==3){
+//         printf("solutions doesn't exits\n");
+//         return 1;
+//     }
+//     else{
+//         nQueen(c,0,n);
+//     }
+
+// }
