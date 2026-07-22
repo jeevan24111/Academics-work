@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: cite1.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Database file #1: reference.bib
+Warning--I didn't find a database entry for "book6"
+You've used 6 entries,
+            1791 wiz_defined-function locations,
+            457 strings with 3606 characters,
+and the built_in function-call counts, 962 in all, are:
+= -- 78
+> -- 24
+< -- 6
++ -- 12
+- -- 6
+* -- 38
+:= -- 153
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 60
+empty$ -- 115
+format.name$ -- 6
+if$ -- 223
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 12
+newline$ -- 33
+num.names$ -- 6
+pop$ -- 36
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 18
+stack$ -- 0
+substring$ -- 0
+swap$ -- 12
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 6
+width$ -- 7
+write$ -- 68
+(There was 1 warning)
