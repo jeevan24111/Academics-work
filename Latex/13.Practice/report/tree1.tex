@@ -1,0 +1,15 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{tikz}
+\tikzstyle{level 1}=[level distance=4.5cm,sibling distance=7cm]
+\tikzstyle{level 2}=[level distance=4cm,sibling distance=4cm]
+\begin{document}
+\begin{tikzpicture}[grow=down,sloped]
+\node {Root}
+child{
+	node {child1}
+	child{node {s1}}
+	child{node {s2}}
+	
+}
+\end{tikzpicture}
+\end{document}

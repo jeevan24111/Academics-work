@@ -1,0 +1,39 @@
+\documentclass[12pt.a4paper]{report}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage[top=2cm,left=2cm,right=2cm,bottom=2cm]{geometry}
+\usetikzlibrary{calc}
+\begin{document}
+\thispagestyle{empty}
+\centering
+\begin{titlepage}
+\begin{tikzpicture}[remember picture,overlay]
+\draw[line width=1.5pt]
+($(current page.north west)+(+1cm,-1cm)$)
+rectangle
+($(current page.south east)+(-1cm,+1cm)$);
+\end{tikzpicture}
+\textbf{\Large{VISVESWARAYA TECHNOLOGICAL}}\\
+\vspace{0.2cm}
+\textbf{\Large{UNIVERSITY}}\\
+\vspace{0.2cm}
+"JNANA SANGAMA",BELAGAVI-590018\\
+\vspace{0.2cm}
+\textbf{{GOVERNMENT ENGINEERING COLLEGE,MOSALEHOSAHALLI}}\\
+\vspace{0.2cm}
+\textbf{{Department of Computer Science and Engineering}}\\
+\vspace{0.3cm}
+\includegraphics[width=6cm]{vtu.png}\\
+\vspace{3cm}
+\textbf{\Large{CERTIFICATE}}\\
+\vspace{0.2cm}
+
+\Large{This is the cerficate that"addition "project is done by{ \color{red}{JEEVAN BAHADDUR B K(4HG24CS021) , AJAY BAHADDUR B K}}
+The certificate bonafide student of government Engineering College,Mosalehosahalli,Hassan-573214}
+
+\vspace{6cm}
+signature of coordiante \hspace{4cm} signature of HOD\\
+Dr.Raghu \hspace{5cm} Dr.Ravi Shankar\\
+\end{titlepage}
+\end{document}
