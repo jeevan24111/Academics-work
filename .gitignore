@@ -4,4 +4,7 @@
 *.toc
 *.log
 *.gz
+*.bbl
+*.blg
+*.synctex.gz
 tempCodeRunnerFile.c

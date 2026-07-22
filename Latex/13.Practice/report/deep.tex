@@ -1,0 +1,38 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{tikz}
+
+\tikzstyle{level 1}=[level distance=4cm, sibling distance=6cm]
+\tikzstyle{level 2}=[level distance=4cm, sibling distance=4cm]
+\tikzstyle{level 3}=[level distance=3.5cm, sibling distance=2.5cm]  % Adjusted for better alignment
+
+\begin{document}
+\begin{tikzpicture}[grow=down,sloped]  % Removed sloped for better alignment
+\node {Root}
+child { 
+    node {child 1}
+    child {
+        node {sub child 1};
+        child { node {g2}}
+        child { node {g2} }
+    }
+    child {
+        node {sub child 2};
+        child { node {g1}; }
+        child { node {g2}; }
+    }
+}
+child {
+    node {child 1};
+    child {
+        node {sub child 1};
+        child { node {g1}; }
+        child { node {g2}; }
+    }
+    child {
+        node {sub child 2};
+        child { node {g1}; }
+        child { node {g2}; }
+    }
+};
+\end{tikzpicture}
+\end{document}

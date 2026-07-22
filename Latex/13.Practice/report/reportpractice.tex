@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage[top=2cm,left=2cm,right=2cm,bottom=2cm]{geometry}
+\usetikzlibrary{calc}
+\usepackage{graphicx}
+\begin{document}
+\thispagestyle{empty}
+\begin{titlepage}
+\centering
+\begin{tikzpicture}[remember picture,overlay]
+\draw[line width=1.5pt]
+($(current page.north west)+(+1cm,-1cm)$)
+rectangle
+($(current page.south east)+(-1cm,+1cm)$);
+\end{tikzpicture}
+\small{GOVERNMENT OF KARNATAKA}\\
+\vspace{0.1cm}
+\textbf  DEPARTMENT  OF COLLEGITATE AND TECHNICAL EDUCATION\\[0.2cm]
+\vspace{0.1cm}
+\textbf{\Large{\color{red}VISHVESHWARRAYA TECHNOLOGICAL }}\\[0.4cm]
+\vspace{0.2cm}
+\textbf{\Large{\color{red}UNIVERSITY}}\\[0.3cm]
+\vspace{0.2cm}
+\textbf{\Large{"JNANA SANGAMA",BELAGAVI-59001811}}\\[1cm]
+\vspace{0.2cm}
+\includegraphics[width=6cm]{vtu.png}\\[2cm]
+\textbf{\Large{NATIONAL SERVICE SCHEME(NSS REPORT)}}\\[0.2cm]
+submitted in partial fulfillment of the requirement for the award of\\[0.1cm]
+Bachelor Degree\\[0.1cm]
+in\\[0.1cm]
+Computer Science and Engineering\\[0.1cm]
+Submitted by\\[1cm]
+\textbf{\Large{JEEVAN BAHADDUR B  K \hspace{0.4cm} 4HG24CS021|}}\\[1cm]
+\small{coordinator}\\[0.2cm]
+\textbf{Dr.Raghu M.E}\\[0.2cm]
+B.E,M.TECH,PhD\\[0.2cm]
+Assistant Professor\\[0.4cm]
+\textbf{\Large{Department of Computer Science and Engineering}}\\[0.1cm]
+\vspace{0.2cm}
+\Large{GOVERNMENT ENGINEERING COLLEGE}\\
+\vspace{0.2cm}
+\Large{MOSALEHOSAHALLI,HASSAN-573214}\\
+\vspace{0.2cm}
+\Large{2025-26}\\
+\end{titlepage}
+\end{document}

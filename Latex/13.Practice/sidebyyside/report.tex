@@ -1,0 +1,30 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{graphicx}
+\usepackage[top=2cm,left=2cm,right=2cm,bottom=2cm]{geometry}
+\usepackage{color}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\begin{document}
+\thispagestyle{empty}
+\begin{titlepage}
+\centering
+\begin{tikzpicture}[remember picture,overlay]
+\draw[line width=1.5pt]
+($(current page.north west)+(+1cm,-1cm)$)
+rectangle
+($(current page.south east)+(-1cm,1cm)$);
+\end{tikzpicture}
+
+\textbf{\Large{VISHVESHWARRAYA TECHNOLOGICAL }}\\[0.4cm]
+\vspace{0.2cm}
+\textbf{\Large{UNIVERSITY}}\\[0.3cm]
+\vspace{0.2cm}
+\textbf\Large{"JNANA SANGAMA",BELAGAVI-59001811}\\
+\vspace{0.2cm}
+\textbf{Government Engineering }\textbf{MOSALEHOSAHALLI}\\
+\vspace{0.1cm}
+\textbf{\Large{Department of Computer Science and Engineering}}
+\vspace{0.2cm}
+\end{titlepage}
+\end{document}
+

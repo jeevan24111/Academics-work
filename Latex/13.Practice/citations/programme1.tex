@@ -1,0 +1,19 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\begin{document}
+\centering
+\begin{algorithm}
+\caption{GCD of Two Positive Numbers}
+\begin{algorithmic}[1]
+\Procedure{GCD}{a,b}
+\While{$b \neq 0 $}
+		\State $t \gets b$
+		\State $b \gets a \bmod b$
+		\State $ a \gets t$
+\EndWhile
+\State \Return $a$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+\end{document}
